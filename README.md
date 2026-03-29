@@ -1,72 +1,43 @@
 # E-Commerce Sales Analysis Dashboard
 
-A data analysis project exploring e-commerce sales trends, regional performance, and profitability using Power BI.
+## 📌 Business Problem
 
-## Project Overview
+An Indian e-commerce business needed visibility into which regions, product categories, and time periods were driving revenue and profit — and which were eroding margins through excessive discounting — to make smarter inventory and marketing decisions.
 
-This project analyzes e-commerce sales data spanning 2023–2025, covering orders across multiple regions in India. The goal is to uncover insights around revenue, profit margins, category performance, and customer payment behavior.
+## 📊 Data Source
 
-## Dashboard Preview
+- Dataset contained **5,000 rows** and **15 columns**.
+- Key variables included: Order Date, Region, State, City, Category, Sub-Category, Quantity, Unit Price, Discount, Sales, Profit, Payment Mode.
 
-![E-Commerce Sales Dashboard](E-commerce%20sales.pdf)
+## 🛠️ Tools & Methodology
 
-> Full interactive dashboard available in the `.pbix` file below.
+- **Tools Used:** Power BI (data modeling, DAX measures, interactive dashboard), CSV (raw data source).
+- **Methodology:**
+  1. Data Cleaning & Preprocessing (standardizing date formats, validating sales/profit calculations).
+  2. Exploratory Data Analysis (EDA) to identify regional trends, category performance, and discount impact.
+  3. Dashboard Creation to visualize KPIs and enable drill-through by region, category, and time period.
 
-## Files
+## 💡 Key Business Insights
 
-| File | Description |
-|------|-------------|
-| `Ecommerce_Sales_Data_2024_2025.csv` | Raw dataset with 2023–2025 order records |
-| `E-Commerce Sales.pbix` | Power BI interactive dashboard file |
-| `E-commerce sales.pdf` | Static PDF export of the dashboard |
+- **Regional Performance:** The South region (led by Bangalore) consistently delivered the highest profit margins, making it the priority market for upsell campaigns.
+- **Discount Impact:** Orders with discounts above 20% showed significantly compressed profit margins, suggesting a need to cap promotional discounts on low-margin categories like Groceries.
+- **Category Leaders:** Books and Kitchen appliances drove the highest average order value, while Groceries had the highest order volume but lowest profit per unit.
+- **Payment Trends:** UPI and Debit Card dominated transactions, indicating a mobile-first customer base — relevant for targeting digital ad spend.
 
-## Dataset Overview
+## 🖼️ Visualizations
 
-The dataset contains transactional e-commerce data with the following fields:
+![E-Commerce Sales Dashboard](E-commerce%20Sale%20Analysis%20Dashboard.png)
 
-| Column | Description |
-|--------|-------------|
-| Order ID | Unique identifier for each order |
-| Order Date | Date the order was placed |
-| Customer Name | Name of the customer |
-| Region | Geographic region (North, South, East, West) |
-| City / State | Location details |
-| Category | Product category (Books, Groceries, Kitchen, etc.) |
-| Sub-Category | Product sub-category |
-| Product Name | Name of the product |
-| Quantity | Number of units ordered |
-| Unit Price | Price per unit (INR) |
-| Discount | Discount percentage applied |
-| Sales | Total sales value after discount |
-| Profit | Profit earned on the order |
-| Payment Mode | Payment method (UPI, Credit Card, Debit Card, etc.) |
+> Full interactive dashboard available in the `.pbix` file.
 
-## Key Analysis Areas
+## 💻 How to Run This Project
 
-- Sales and profit trends over time (2023–2025)
-- Regional and city-level performance breakdown
-- Top-performing product categories and sub-categories
-- Discount impact on profit margins
-- Payment mode distribution across customer segments
-
-## Tools Used
-
-- **Power BI Desktop** — Dashboard creation and data visualization
-- **Microsoft Excel / CSV** — Raw data source
-- **DAX** — Calculated measures and KPIs within Power BI
-
-## How to Use
-
-1. Download `E-Commerce Sales.pbix`
-2. Open with [Power BI Desktop](https://powerbi.microsoft.com/desktop/) (free)
-3. Explore the interactive visuals, filters, and drill-throughs
-
-## Dashboard Highlights
-
-- KPI cards for Total Sales, Total Profit, and Order Count
-- Time-series trend charts for monthly/yearly performance
-- Region-wise and category-wise breakdowns
-- Profit margin analysis by discount bands
+1. Clone this repository:
+   ```
+   git clone https://github.com/VikasDs007/E-Commerce-Sales-Analysis-Dashboard.git
+   ```
+2. Open `E-Commerce Sales Analysis Dashboard.pbix` with [Power BI Desktop](https://powerbi.microsoft.com/desktop/) (free).
+3. The CSV file `Ecommerce_Sales_Data_2024_2025.csv` is already linked as the data source — refresh to reload if needed.
 
 ---
 
